@@ -1,0 +1,194 @@
+<app-nav></app-nav>
+<div class="mycss">
+  <div class="heading">
+    <h1>Ordered List UI</h1>
+  </div>
+  <div class="container">
+    <div class="nav">
+      <a>
+        <fa-icon icon="search"></fa-icon>&nbsp;&nbsp;&nbsp; Filter Options
+      </a>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <div class="table__wrapper">
+          <table class="table is-striped rnd">
+            <tbody>
+
+              <tr>
+                <td class="fbox rnd">
+                  <p>LANGUAGE</p>
+                </td>
+                <td>
+                  <div class="select is-rounded">
+                    <select>
+                      <option>is</option>
+                      <option>is not</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <div class="select is-rounded">
+                    <select>
+                      <option>English</option>
+                      <option>French</option>
+                      <option>Indonesian</option>
+                      <option>Russian</option>
+                      <option>Arabic</option>
+                    </select>
+                  </div>
+                </td>
+                <td></td>
+                <td>
+                  <button class="button is-danger">
+                    <fa-icon icon="times"></fa-icon>
+                  </button>
+                </td>
+              </tr>
+
+
+              <tr>
+
+                <td class="fbox rnd">
+                  <p>APP VERSION</p>
+                </td>
+                <td>
+                  <div class="select is-rounded">
+                    <select>
+                      <option>is</option>
+                      <option>is not</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" [(ngModel)]="appID" type="text" placeholder="...">
+                    <span class="icon is-small is-left">
+                      <fa-icon icon="pen"></fa-icon>
+                    </span>
+                  </div>
+                </td>
+                <td></td>
+
+                <td>
+                  <button class="button is-danger">
+                    <fa-icon icon="times"></fa-icon>
+                  </button>
+                </td>
+              </tr>
+
+
+              <tr>
+                <td class="fbox rnd">
+                  <p>USER TAG</p>
+                </td>
+                <td>
+                  <div class="select is-rounded">
+                    <select>
+                      <option>IRID</option>
+                      <option>Country</option>
+                      <option>Birthdate</option>
+                    </select>
+                  </div>
+                </td>
+                <td style="width: 20px!important">
+                  <div class="select is-rounded">
+                    <select>
+                      <option>is</option>
+                      <option>is not</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <div class="control has-icons-left has-icons-right">
+                    <input style="width: 120px!important" class="input" [(ngModel)]="appID" type="text"
+                      placeholder="...">
+                    <span class="icon is-small is-left">
+                      <fa-icon icon="pen"></fa-icon>
+                    </span>
+                  </div>
+                </td>
+                <td>
+                  <button class="button is-danger">
+                    <fa-icon icon="times"></fa-icon>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="fbox rnd">
+                  <p>DEVICE TYPE</p>
+                </td>
+                <td>
+                  <div class="select is-rounded">
+                    <select>
+                      <option>is</option>
+                      <option>is not</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <div class="control has-icons-left has-icons-right">
+                    <input class="input" [(ngModel)]="appID" type="text" placeholder="...">
+                    <span class="icon is-small is-left">
+                      <fa-icon icon="pen"></fa-icon>
+                    </span>
+                  </div>
+                </td>
+                <td></td>
+
+                <td>
+                  <button class="button is-danger">
+                    <fa-icon icon="times"></fa-icon>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+
+                <td class="fbox rnd">
+                  <p>ALL USERS</p>
+                </td>
+                <td class="fbox rnd">
+                  <p>
+                    <fa-icon icon="users"></fa-icon> All Subscribed Users
+                  </p>
+                </td>
+
+                <td></td>
+
+                <td></td>
+                <td>
+                  <button class="button is-danger">
+                    <fa-icon icon="times"></fa-icon>
+                  </button>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="num">
+        <h3>LANGUAGE - Language of User's Device</h3>
+      </div>
+      <div class="num">
+        <h3>APP VERSION - Version of your App</h3>
+      </div>
+      <div class="num">
+        <h3>USER TAG - Tags you have added</h3>
+      </div>
+      <div class="num">
+        <h3>DEVICE TYPE - Device operating System</h3>
+      </div>
+      <div class="num">
+        <h3>ALL USERS - All subscribed users</h3>
+      </div>
+    </div>
+  </div>
+  <h5 class="message">Hover Over List Items</h5>
+</div>

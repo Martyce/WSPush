@@ -1,0 +1,65 @@
+<app-nav></app-nav>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-one-third">
+        <h3 class="title is-3">App Form</h3>
+        <div class="field">
+          <label class="label">App Name</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" [(ngModel)]="appName" type="text" placeholder="QNET IN- STG">
+            <span class="icon is-small is-left">
+              <fa-icon icon="mobile"></fa-icon>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">App ID</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" [(ngModel)]="appID" type="text" placeholder="5b871016-5027-47be-a7e1-e7858f0099d8">
+            <span class="icon is-small is-left">
+              <fa-icon icon="eye"></fa-icon>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">App Key</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" [(ngModel)]="appKey" type="text" placeholder="N2ZlYjI1ZTYtMjgzNy00ODRiLTk2NjQtY2Y4ZmUzZDVjNDg1">
+            <span class="icon is-small is-left">
+              <fa-icon icon="key"></fa-icon>
+            </span>
+          </div>
+        </div>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" (click)="insertKey()">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-three-quarters">
+        <div class="table__wrapper">
+          <table class="table is-bordered is-narrow is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th>Application Name</th>
+                <th>Application ID</th>
+                <th>Application Key</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let dt of allDt;let i = index">
+                <td>{{dt.appName}}</td>
+                <td>{{dt.appID}}</td>
+                <td>{{dt.appKey}}</td>
+                <td><button class="button is-danger" (click)="deleteKey(dt)"><fa-icon icon="times"></fa-icon></button></td>
+                <td><button class="button is-primary" routerLink="/viewapp" (click)="viewId(dt.appID)"><fa-icon icon="eye"></fa-icon></button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

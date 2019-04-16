@@ -1,0 +1,63 @@
+<div class="pageloader is-active" id="lding" style="opacity: .8!important">
+  <span class="title">Loading</span>
+</div>
+
+<app-nav></app-nav>
+
+
+<div class="" style="margin: 10px">
+
+  <div class="columns">
+    <div class="column is-2">
+      <button class="button" routerLink="/forms">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;&nbsp;&nbsp;Back
+      </button>
+    </div>
+  </div>
+
+
+
+  <div class="columns is-centered">
+    <div class="column is-full">
+      <div class="table__wrapper">
+        <table class="table is-centered is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>DEVICE</th>
+              <th>PLATFORM</th>
+              <th>SUBSCRIBED</th>
+              <th>LAST ACTIVE</th>
+              <th>FIRST SESSION</th>
+              <th>APP VERSION </th>
+              <th>COUNTRY</th>
+              <th>USAGE DURATION</th>
+              <th>LANGUAGE CODE</th>
+              <th>PLAYER ID</th>
+              <th>TAGS - IRID</th>
+              <th>TAGS - COUNTRY</th>
+              <th>TAGS - BIRTHDATE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let dt of allDt; let i = index">
+              <td>{{ dt.device_model }}</td>
+              <td>{{ dt.device_type }}</td>
+              <td>{{ dt.invalid_identifier }}</td>
+              <td>{{ dt.last_active }}</td>
+              <td>{{ dt.created_at }}</td>
+
+              <td>{{ dt.game_version }}</td>
+              <td>{{ dt.country }}</td>
+              <td>{{ dt.playtime }}</td>
+              <td>{{ dt.language }}</td>
+              <td>{{ dt.id }}</td>
+              <td>{{ dt.tags.IRID }}</td>
+              <td>{{ dt.tags.Country }}</td>
+              <td>{{ dt.tags.Birthdate }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
